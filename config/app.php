@@ -176,7 +176,8 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Providers\RepositoryServiceProvider::class,
         Yajra\DataTables\DataTablesServiceProvider::class,
-        Proengsoft\JsValidation\JsValidationServiceProvider::class
+        Proengsoft\JsValidation\JsValidationServiceProvider::class,
+        Barryvdh\DomPDF\ServiceProvider::class,
 
     ],
 
@@ -230,6 +231,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Datatables' => Yajra\DataTables\Facades\DataTables::class,
         'JsValidator' => Proengsoft\JsValidation\Facades\JsValidatorFacade::class,
+        'PDF' => Barryvdh\DomPDF\Facade::class,
 
     ],
 
