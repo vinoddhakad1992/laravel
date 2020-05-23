@@ -87,7 +87,7 @@
 4.php artisan make:provider RepositoryServiceProvider
 
 ##############################################################################################################
-##PDF CREATION
+## PDF CREATION
 1. composer require barryvdh/laravel-dompdf
 2.config/app.php
           'providers' => [
