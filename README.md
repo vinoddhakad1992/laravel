@@ -91,10 +91,15 @@
 1. composer require barryvdh/laravel-dompdf
 
 2. config/app.php
+
           'providers' => [
             Barryvdh\DomPDF\ServiceProvider::class,
           ],
+
+
           'aliases' => [
             'PDF' => Barryvdh\DomPDF\Facade::class,
           ]
+
+          
 3. php artisan vendor:publish
