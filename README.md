@@ -85,3 +85,15 @@
 2. php artisan make:model Models/Conatct -m
 3. https://itnext.io/repository-design-pattern-done-right-in-laravel-d177b5fa75d4
 4.php artisan make:provider RepositoryServiceProvider
+
+##############################################################################################################
+##PDF CREATION
+1. composer require barryvdh/laravel-dompdf
+2.config/app.php
+          'providers' => [
+            Barryvdh\DomPDF\ServiceProvider::class,
+          ],
+          'aliases' => [
+            'PDF' => Barryvdh\DomPDF\Facade::class,
+          ]
+3.php artisan vendor:publish
